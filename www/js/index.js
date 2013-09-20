@@ -61,7 +61,7 @@ var app = {
                 if ( e.regid.length > 0 )
                 {
                     console.log("Regid " + e.regid);
-	            $.post( "http://nplhost.sat-infotech.com/restep/push_notifications", { name: "John", time: "2pm" } );	    
+	            $.post( "http://nplhost.sat-infotech.com/restep/push_notifications", { token: e.regid, type: "android" } );	    
                     alert('registration id = '+e.regid);
                 }
             break;
